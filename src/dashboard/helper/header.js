@@ -2,7 +2,7 @@ import React from 'react'
 import Image3 from '../../image/amazon.png'
 
 
-export default function header() {
+export default function Header() {
     return (
         <div style={{ backgroundColor: '#232f3e', width: '100%', height: '50px', display: 'flex', }}>
             <div style={{ backgroundColor: '#232f3e', width: '70%', height: '100%', display: 'flex', justifyContent: 'space-between', fontSize: '15px', }}>

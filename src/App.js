@@ -1,19 +1,20 @@
 import React from 'react';
-import Header from './header';
 
-import HeaderMain from './layout';
-import Footer  from './footer'
+import { useRoutes } from 'react-router-dom';
+import Dashboard from './dashboard/dashboard';
 
 
 
 function App() {
+
+  const routes= useRoutes([
+    {path:'/',element:<Dashboard/>}
+  ])
   return (
    <>
+   {routes}
    
-    <HeaderMain/>
-    <Header/>
     
-    <Footer/> 
   
    </>
   );

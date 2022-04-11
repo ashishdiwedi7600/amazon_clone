@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { Input } from 'antd';
 import 'antd/dist/antd.css';
-import './App.css'
-import Image1 from './image/Amazon-Logo.png'
+import '../cssCode/Style.css'
 import { EnvironmentOutlined, SearchOutlined } from '@ant-design/icons'
 import { AudioOutlined } from '@ant-design/icons';
-import Image3 from './image/amazon.png'
+// import Image3 from './image/amazon.png'
 import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 

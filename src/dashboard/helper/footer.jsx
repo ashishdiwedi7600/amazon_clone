@@ -1,13 +1,23 @@
 import react from 'react'
-import './App.css'
-import Image1 from './image/Amazon-Logo.png'
-import Image2 from './image/amazone2.png'
+import { useNavigate } from 'react-router-dom'
+import '../cssCode/Style.css'
+import { BackTop } from 'antd';
+
+
+
 
 export default function Footer() {
+    const navi=useNavigate()
+
+    const backToTop=()=>{
+        navi('#')
+    }
     return (
         <>
             <div style={{ width: '100%', display: 'flex', flexDirection: 'column', height: '', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <div style={{ backgroundColor: '#374754', height: '10vh', width: '100%', justifyContent: 'center', display: 'flex' }}>vishal</div>
+                <div style={{ backgroundColor: '#374754', height: '10vh', width: '100%', justifyContent: 'center', display: 'flex' }}>
+                    <a style={{width:'100%',backgroundColor:'#374754',display:'flex',justifyContent:'center',alignItems:'center',color:'white'}} href='#'>Back To Top</a>
+                </div>
 
 
                 <div style={{ backgroundColor: '#232f3e', height: 'auto', width: '100%', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
@@ -57,8 +67,8 @@ export default function Footer() {
                                 <div style={{ width: '22%' }}>
                                     <img className='header_logo' src='https://www.doorwaysva.org/wp-content/uploads/2019/06/amazon-logo.png' />
                                 </div>
-                                <div style={{ width: '20%' }}>
-                                    vishal
+                                <div style={{ width: '20%',display:'flex',justifyContent:'center',alignItems:'center' }}>
+                                    <a href="" style={{border:'1px solid white',color:'white',display:'flex',justifyContent:'center',alignItems:'center',height:'70%',width:'70%'}}>English</a>
                                 </div>
 
                             </div>

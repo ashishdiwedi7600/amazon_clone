@@ -1,6 +1,5 @@
 import React from 'react'
-import Image3 from './image/amazon.png'
-import Image4 from './image/a2.png'
+import Image3 from '../../image/amazon.png'
 
 export default function header() {
     return (

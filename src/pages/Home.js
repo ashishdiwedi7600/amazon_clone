@@ -3,14 +3,10 @@ import "./Home.css";
 import Container from './container'
 
 
-
-
-
-
 function Home() {
   return (
     <>
-      <Container/>
+      <Container />
     </>
   )
 }

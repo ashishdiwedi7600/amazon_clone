@@ -50,13 +50,14 @@
 } */
 
 
-.container{
+.container {
   height: 500vh;
   background-color: #dddddd;
 }
+
 .link {
   font-size: 18px;
-  margin:5%;
+  margin: 5%;
 }
 
 .link:hover {
@@ -79,7 +80,7 @@
 
 .card {
   width: 350px;
-  height:530px;
+  height: 530px;
 }
 
 .card-content {
@@ -105,7 +106,6 @@
   padding-left: 35px;
   padding-right: 20px;
   width: 98vw;
-  gap: 15px; 
+  gap: 15px;
 
 }
-

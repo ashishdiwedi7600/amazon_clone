@@ -1,5 +1,5 @@
 .container{
-  height: 200vh;
+  height: 500vh;
   background-color: #dddddd;
 }
 .link {
@@ -26,7 +26,7 @@
 }
 
 .card {
-  width: 360px;
+  width: 350px;
   height:530px;
 }
 
@@ -50,9 +50,9 @@
   position: absolute;
   left: 0;
   top: 450px;
-  padding-left: 20px;
+  padding-left: 35px;
   padding-right: 20px;
-  width: 100vw;
+  width: 98vw;
   gap: 15px; 
 
 }

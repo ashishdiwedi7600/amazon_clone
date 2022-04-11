@@ -1,0 +1,62 @@
+
+/* Modal Style*/
+.ant-modal-content{
+  width: 400px;
+  border-radius: 10px;
+}
+
+a.hover1:hover {
+  color: rgb(108, 4, 4);
+}
+
+.header_logo {
+  height: 90%;
+  width: 6.5vw;
+  object-fit: cover;
+  object-fit: fill;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.header_flag {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+}
+
+
+
+.header__searchIcon {
+  background-color: #cd9042;
+  padding: 5px;
+  height: 22px !important;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  min-height: 100%;
+}
+
+a.ex1:hover,
+a.ex1:active {
+  /* height: 4vh; */
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+}
+
+
+
+a.ex5:hover,
+a.ex5:active {
+  text-decoration: underline;
+}

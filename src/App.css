@@ -1,5 +1,108 @@
+
 /* Modal Style*/
 .ant-modal-content{
   width: 400px;
   border-radius: 10px;
+
+.app {
+  min-width: 100%;
+  height: 100%;
+  width: fit-content;
+
+}
+
+a.hover1:hover {
+  color: rgb(108, 4, 4);
+}
+
+/* div > a:hover {
+   height: 6vh;
+   border: 2px solid white;
+  color: white;
+ 
+}  */
+
+/* .header{
+  height: 100%;
+  width:100%;
+  display: flex;
+  background-color: #131921;
+  position: sticky;
+  
+  z-index: 100;
+}  */
+.header_logo {
+  height: 90%;
+  width: 6.5vw;
+  object-fit: cover;
+  object-fit: fill;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.header_flag {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+}
+
+/* .header__searchInput {
+  padding: 10px;
+  height: 12px;
+  border: none;
+  width: 100%;
+} */
+
+.header__searchIcon {
+  background-color: #cd9042;
+  padding: 5px;
+  height: 22px !important;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  min-height: 100%;
+}
+
+a.ex1:hover,
+a.ex1:active {
+  /* height: 4vh; */
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+}
+
+a.ex2:hover,
+a.ex2:active {
+  font-size: 150%;
+}
+
+a.ex3:hover,
+a.ex3:active {
+  background: red;
+}
+
+a.ex4:hover,
+a.ex4:active {
+  font-family: monospace;
+}
+
+a.ex5:visited,
+a.ex5:link {
+  text-decoration: none;
+}
+
+a.ex5:hover,
+a.ex5:active {
+  text-decoration: underline;
+
 }

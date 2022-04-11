@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import './App.css'
 import Signup from './components/signUp/signUp';
@@ -19,7 +20,8 @@ function App() {
     }
   ])
 
-  return routes
+  return routes;
+
 }
 
 export default App;

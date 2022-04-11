@@ -1,6 +1,7 @@
 import React from 'react'
 import Image3 from '../../image/amazon.png'
 
+
 export default function header() {
     return (
         <div style={{ backgroundColor: '#232f3e', width: '100%', height: '50px', display: 'flex', }}>
@@ -55,7 +56,7 @@ export default function header() {
 
             <div style={{ backgroundColor: '#232f3e', width: '30%', display: 'flex', height: '100%', justifyContent: 'center' }}>
 
-                <img style={{ display: 'flex', justifyContent: 'space-around', height: '100%', width: '100px' }} src={Image3} />
+                <img style={{ display: 'flex', justifyContent: 'space-around', height: '100%', width: '10%' }} src={Image3} />
                 <div style={{ display: 'flex', justifyContent: 'center', fontSize: '1.2vw', alignItems: 'center', color: 'white' }}>Shopping made easy | Download the app</div>
 
             </div>

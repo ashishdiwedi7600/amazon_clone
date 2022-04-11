@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
+import './App.css'
+import Signup from './components/signUp/signUp';
+import SignIn from './components/signIn/signIn';
+import HomePage from './Pages/homePage';
+import SignIn2 from './components/signIn/signIn2';
+import { useRoutes } from 'react-router-dom';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const routes = useRoutes([
+    {
+      path:"/" ,element:<HomePage/>
+    },
+    {
+      path:'signIn2',element:<SignIn2/>
+    },
+    {
+      path:'signup',element:<Signup/>
+    }
+  ])
+
+  return routes
 }
 
 export default App;

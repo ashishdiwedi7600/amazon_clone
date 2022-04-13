@@ -15,19 +15,19 @@ function Cardview() {
     <>
       <div className="cards">
         {data.map((val, id) => {
-          if(id<11)
-          return (
-            <>
-              <Card className="card">
-                <h1>{val.title}</h1>
-                <img src={val.thumbnailUrl} alt="Comics Category" className="card-content" />
-                <br />
-                <Link to="/categories" state={"Comics"} className="link">
-                  Shop Now
-                </Link>
-              </Card>
-            </>
-          );
+          if (id < 11)
+            return (
+              <>
+                <Card className="card">
+                  <h1>{val.title}</h1>
+                  <img src={val.thumbnailUrl} alt="Comics Category" className="card-content" />
+                  <br />
+                  <Link to="/categories" state={"Comics"} className="link">
+                    Shop Now
+                  </Link>
+                </Card>
+              </>
+            );
         })}
 
         <Card className="card">
@@ -49,9 +49,9 @@ function Cardview() {
             </Link>
           </div>
         </Card>
-         <Carouselss />
+        <Carouselss />
       </div>
-     
+
     </>
   )
 }

@@ -8,11 +8,9 @@ function Container() {
         <>
             <div className="container" style={{ backgroundColor: '#dddddd !important' }}>
                 <Carousel />
-                <Cardview />    
-                <br/>
-                {/* <Carouselss /> */}
+                <Cardview />
             </div>
-            
+
         </>
     )
 }

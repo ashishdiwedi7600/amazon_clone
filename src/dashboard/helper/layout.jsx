@@ -5,9 +5,10 @@ import '../cssCode/Style.css'
 import { EnvironmentOutlined, SearchOutlined } from '@ant-design/icons'
 import { AudioOutlined } from '@ant-design/icons';
 // import Image3 from './image/amazon.png'
+import LocationModal from '../../components/LocationModal';
 import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
-
+import SigninPopover from '../../popovers/signinPopover';
 export default function Layout() {
     const [cartValue, setCartValue] = useState(0)
     const { Search } = Input;
@@ -34,23 +35,19 @@ export default function Layout() {
     return (
         <>
             <div style={{
+                
+                zIndex: "9999",
                 backgroundColor: '#131921',
                 position: "sticky", top: 0,
-                display: 'flex', width: '100%', height: '80%', justifyContent: 'center', flexWrap: 'wrap',
+                display: 'flex', width: '100%', height: '60px', justifyContent: 'center', flexWrap: 'wrap',
             }}>
 
-                <div style={{ width: '25%', display: 'flex' }}>
-                    <div style={{ width: "35%", height: "100%", display: 'flex', justifyContent: 'start', alignItems: 'center', textAlign: 'center' }}>
-                        <a href="" class="ex1" style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', flexDirection: 'column', height: '85%', width: '80%' }}>
-                            <img className='header_logo' src='https://i0.wp.com/www.dafontfree.co/wp-content/uploads/2021/11/Amazon-Logo-Font-1-scaled.jpg?resize=2560%2C1578&ssl=1' /></a>
-                    </div>
-                    <div style={{ width: '65%', height: '100%', color: 'black', color: 'white', display: 'flex', justifyContent: 'center', textAlign: 'center', flexDirection: 'column' }}>
-                        <a href="" class="ex1" style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', flexDirection: 'column', height: '85%', width: '80%' }}>
-                            <span style={{ fontSize: '1vw', marginTop: '9px', color: 'white' }}>Hello</span>
+                <div  style={{ width: '25%', display: 'flex' }}>
+                    <div  style={{ width: "35%", height: "90%", display: 'flex', justifyContent: 'start', alignItems: 'center', textAlign: 'center',marginTop:'2px' }}>
 
-                            <span style={{ fontFamily: 'inherit', fontWeight: '750', fontSize: '1.1vw ', color: 'white', marginTop: '-1px' }}><EnvironmentOutlined /> Select your address</span>
-                        </a>
+                        <img className='header_logo' src='https://i0.wp.com/www.dafontfree.co/wp-content/uploads/2021/11/Amazon-Logo-Font-1-scaled.jpg?resize=2560%2C1578&ssl=1' />
                     </div>
+                    <LocationModal />
                 </div>
 
                 <div style={{ width: '45%', display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -75,13 +72,9 @@ export default function Layout() {
                 <div style={{ width: '30%', display: 'flex' }}>
                     <div style={{ width: '15%', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
                         <a href="" class="ex1" style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', flexDirection: 'column', height: '85%', width: '80%', alignItems: 'center', }}>
-                            <img className='header_flag' style={{ height: '6vh', width: '3vw', display: 'flex', marginTop: '10px' }} src='https://flagicons.lipis.dev/flags/4x3/in.svg' /></a>
+                            <img className='header_flag' style={{ height: '6vh', width: '3vw', display: 'flex', marginTop: '0px' }} src='https://flagicons.lipis.dev/flags/4x3/in.svg' /></a>
                     </div>
-                    <div style={{ width: '45%', display: 'flex', justifyContent: 'center', flexDirection: 'column', textAlign: 'center' }}>
-                        <a href="" class="ex1" style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', flexDirection: 'column', height: '85%', width: '90%' }}>
-                            <span style={{ fontSize: '1vw', marginTop: '9px', color: 'white' }}>Hello, Sign in</span>
-                            <span style={{ fontFamily: 'inherit', fontWeight: '750', fontSize: '1.2vw', color: 'white' }}> Account & Lists</span></a>
-                    </div>
+                    <SigninPopover />
                     <div style={{ width: '20%', display: 'flex', justifyContent: 'center', flexDirection: 'column', textAlign: 'center' }}>
                         <a href="" class="ex1" style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', flexDirection: 'column', height: '85%', width: '90%' }}>
                             <span style={{ fontSize: '1vw', color: 'white' }}>return</span>

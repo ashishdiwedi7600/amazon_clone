@@ -1,3 +1,4 @@
+import { EnvironmentOutlined } from '@ant-design/icons';
 import { Button, Modal } from 'antd'
 import React, { useState } from 'react'
 
@@ -8,12 +9,21 @@ export default function LocationModal() {
     console.log(showModal);
     return (
         <>
-            <Button type="primary" onClick={() => setShowModal(!showModal)}>
-                Vertically centered modal dialog
-            </Button>
-            <Modal
+           
+         
+           
+
+<button  onClick={() => setShowModal(!showModal)} style={{ border:'none',background:"none", width: '100%', display: 'flex', justifyContent: 'center', flexDirection: 'column', textAlign: 'center' }}>
+                        <a  class="ex1" style={{ display: 'flex', justifyContent: 'center', textAlign: 'center', flexDirection: 'column', height: '85%', width: '90%' }}>
+                            <span style={{ fontSize: '1vw', color: 'white' }}><EnvironmentOutlined/>Hello</span>
+                            <span style={{ fontFamily: 'inherit', fontSize: '1.2vw', color: 'white' }}> Know your Location</span></a>
+                    </button>
+    
+      
+        
+            <Modal 
                 closable={false}
-                bodyStyle={{ padding: "0px", height: "240px",  borderRadius: "30px" }}
+                bodyStyle={{scrollbarWidth:"none", padding: "0px", height: "240px",  borderRadius: "30px" }}
                 centered
                 maskClosable={true}
                 onCancel={() => setShowModal(!showModal)}

@@ -2,7 +2,11 @@
 /* Modal Style*/
 .ant-modal-content{
   width: 400px;
-  border-radius: 10px;
+  border-radius: 8px!important;
+  overflow: hidden;
+}
+body.ant-scrolling-effect{
+  width: 100%!important;
 }
 
 a.hover1:hover {
@@ -12,13 +16,13 @@ a.hover1:hover {
 .header_logo {
   height: 90%;
   width: 6.5vw;
-  object-fit: cover;
-  object-fit: fill;
-  display: flex;
-  justify-content: center;
-  
+  object-fit: strech;
 }
-
+.header_logo:hover{
+  outline: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+}
 .header_flag {
   height: 100%;
   width: 100%;
@@ -51,6 +55,7 @@ a.ex1:active {
   /* height: 4vh; */
   border: 1px solid white;
   border-radius: 3px;
+  margin: 0px;
   color: white;
 }
 

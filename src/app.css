@@ -1,0 +1,15 @@
+body{
+    width: 100%;
+    overflow:hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+button>span :hover{
+    border: 1px solid red;
+    cursor: pointer;
+}

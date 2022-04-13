@@ -1,13 +1,8 @@
 import React, { useState } from 'react'
 import { checkValidation } from '../Helper/validate';
 export default function CustomInput(props) {
-
-
-  
-
-
+   
     const { type , name ,placeholder} =props
-
     const handleChange=(e)=>{
         let key = e.target.name;
         let value = e.target.value;

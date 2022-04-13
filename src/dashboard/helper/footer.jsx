@@ -2,21 +2,19 @@ import react from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../cssCode/Style.css'
 import { BackTop } from 'antd';
+import { useState } from 'react/cjs/react.production.min';
 
 
 
 
 export default function Footer() {
     const navi=useNavigate()
-
-    const backToTop=()=>{
-        navi('#')
-    }
+   
     return (
         <>
-            <div style={{ width: '100%', display: 'flex', flexDirection: 'column', height: '', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <div style={{ width: '100%', display: 'flex', flexDirection: 'column',  justifyContent: 'center', flexWrap: 'wrap' }}>
                 <div style={{ backgroundColor: '#374754', height: '10vh', width: '100%', justifyContent: 'center', display: 'flex' }}>
-                    <a style={{width:'100%',backgroundColor:'#374754',display:'flex',justifyContent:'center',alignItems:'center',color:'white'}} href='#'>Back To Top</a>
+                    <a style={{width:'100%',backgroundColor:'#374754',display:'flex',justifyContent:'center',alignItems:'center',color:'white'}}  >Back To Top</a>
                 </div>
 
 

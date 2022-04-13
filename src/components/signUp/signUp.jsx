@@ -17,7 +17,6 @@ export default function Signup() {
         password :{value:"",isValid:""},
         
     })
-
   
     const inputContent=(key,value,isValid)=>{
               setAllValues((allValues)=>({...allValues,[key]:{value,isValid}}))

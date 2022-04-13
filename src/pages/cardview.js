@@ -6,6 +6,7 @@ import Adventure from "../images/adventure.png";
 import Dictionaries from "../images/dictionaries.png";
 import Fantasy from "../images/fantasy.png";
 import Horror from "../images/horror.png";
+import Carouselss from '../component/carouselss';
 
 const catCard = [Adventure, Fantasy, Horror, Dictionaries];
 
@@ -13,7 +14,8 @@ function Cardview() {
   return (
     <>
       <div className="cards">
-        {data.map((val, key) => {
+        {data.map((val, id) => {
+          if(id<11)
           return (
             <>
               <Card className="card">
@@ -47,8 +49,9 @@ function Cardview() {
             </Link>
           </div>
         </Card>
-
+         <Carouselss />
       </div>
+     
     </>
   )
 }

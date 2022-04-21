@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import './drawer1.css';
 import Data from '../subsidemenu/data.json'
 import { Drawer, Button, Menu } from 'antd';
 import Icon, { UserOutlined, RightOutlined, ArrowLeftOutlined } from '@ant-design/icons';
 import SubMenu from 'antd/lib/menu/SubMenu';
-// import Amazon from './amazon.jpg'
+import Amazon from './amazon.jpg'
 
 export default function Drawer1() {
   const [id, setId] = useState('')
@@ -21,7 +21,7 @@ export default function Drawer1() {
 
   return (
     <>
-      {/* <img style={{ height: '100%', width: '100%', top: '0px' }} src={Amazon} /> */}
+      <img style={{ height: '100%', width: '100%', top: '0px' }} src={Amazon} />
       <span> <Button className='btn' type="primary" onClick={showDrawer}> Open</Button></span>
 
       <Drawer style={{ padding: '0px' }}
@@ -252,52 +252,52 @@ export default function Drawer1() {
                       }} >    {val.title1}     </div>
                       <div style={{ display: "flex", flexDirection: "column", lineHeight: '40px', fontSize: '14px', paddingBottom: '5px', color: "black", borderBottom: '#ddd' }}>
 
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp1} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p1} </a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp2} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p2} </a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp3} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p3}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp4} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p4}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp5} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p5}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp6} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p6}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp7} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p7}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp8} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p8}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp9} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p9}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp10} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p10}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp11} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p11}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp12} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p12}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp13} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p13}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp14} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p14}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp15} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p15}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlp16} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.p16}</a>
                         </a>
                       </div>
@@ -309,37 +309,37 @@ export default function Drawer1() {
                         fontSize: '18px', padding: '10px 0px 5px 36px', fontWeight: '700', lineHeight: '24px', color: '#111', textTransform: 'capitalize', display: 'inline-block'
                        }} > {val.title2} </div>
                        <div style={{ display: "flex", flexDirection: "column", lineHeight: '40px', fontSize: '14px', color: "black", borderTop: '1px' }}>
-                        <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                        <a href={val.urlq1} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                           <a className='items'>{val.q1} </a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq2} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'>{val.q2} </a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq3} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'>{val.q3} </a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq4} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'>{val.q4}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq5} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'>{val.q5} </a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq6} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'>{val.q6} </a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq7} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'> {val.q7}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq8} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'>{val.q8} </a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq9} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'>{val.q9} </a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq10} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'>{val.q10}</a>
                         </a>
-                        <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                        <a href={val.urlq11} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                           <a className='items'>{val.q11}</a>
                         </a>
                       </div></>}
@@ -352,16 +352,16 @@ export default function Drawer1() {
                       fontSize: '18px', padding: '10px 0px 5px 36px', borderBottom: '2px', fontWeight: '700', lineHeight: '24px', color: '#111', textTransform: 'capitalize', display: 'inline-block'
                     }} > {val.title3}     </div>
                     <div style={{ display: "flex", flexDirection: "column", lineHeight: '40px', fontSize: '14px', color: "black", borderTop: '1px' }}>
-                      <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                      <a href={val.urlr1} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                         <a className='items'>{val.r1} </a>
                       </a>
-                      <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                      <a href={val.urlr2} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                         <a className='items'>{val.r2} </a>
                       </a>
-                      <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                      <a href={val.urlr3} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                         <a className='items'>{val.r3} </a>
                       </a>
-                      <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                      <a href={val.urlr4} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                         <a className='items'>{val.r4}</a>
                       </a>
                     </div></>}
@@ -373,22 +373,22 @@ export default function Drawer1() {
                       fontSize: '18px', padding: '10px 0px 5px 36px', borderBottom: '2px', fontWeight: '700', lineHeight: '24px', color: '#111', textTransform: 'capitalize', display: 'inline-block'
                     }} > {val.title4}     </div>
                     <div style={{ display: "flex", flexDirection: "column", lineHeight: '40px', fontSize: '14px', color: "black", borderBottom: '1px' }}>
-                      <a href='' style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
+                      <a href={val.urls1} style={{ display: "flex", padding: '0px 36px ', justifyContent: "space-between" }}>
                         <a className='items'>{val.s1} </a>
                       </a>
-                      <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                      <a href={val.urls2} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                         <a className='items'>{val.s2} </a>
                       </a>
-                      <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                      <a href={val.urls3} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                         <a className='items'>{val.s3} </a>
                       </a>
-                      <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                      <a href={val.urls4} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                         <a className='items'>{val.s4}</a>
                       </a>
-                      <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                      <a href={val.urls5} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                         <a className='items'>{val.s5} </a>
                       </a>
-                      <a href='' style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
+                      <a href={val.urls6} style={{ display: "flex", padding: '0px 36px', justifyContent: "space-between" }}>
                         <a className='items'>{val.s6} </a>
                       </a>
 

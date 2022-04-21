@@ -19,10 +19,12 @@
     color: rgb(116, 116, 116);
     padding-top: 5px;
     width: 20px;
+
 }
 
-.icon:hover {
+a:hover .icon {
     color: black !important;
+
 }
 
 .items a {
@@ -37,6 +39,7 @@ a:hover {
     background: rgb(227, 233, 233);
     color: #000 !important;
 }
+
 
 .dropdown {
     color: black;
@@ -78,14 +81,18 @@ a:hover {
 .ant-drawer-content-wrapper {
     width: 365px !important;
     height: 95%;
+    /* transform: translateX(-150%) !important; */
 }
-/* .ant-drawer-wrapper-body{ */
-    /* height: 120%; */
-/* } */
 
 .ant-drawer-content {
     min-width: 50%;
-    height: 153% !important ;
+    /* margin-top: 50px; */
+    /* height: 153% !important ; */
+}
+
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+    box-shadow: none !important;
+    height: 225%;
 }
 
 .ant-menu-sub.ant-menu-inline {

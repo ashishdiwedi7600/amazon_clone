@@ -1,28 +1,21 @@
-
-
-
-import Dashboard from './dashboard/dashboard';
+import React from 'react'
 import './app.css'
-import Home from '../src/Pages/Home'
-
-import React, { useState } from 'react';
-import Signup from './components/signUp/signUp';
-import SignIn from './components/signIn/signIn';
-import HomePage from './Pages/homePage';
-import SignIn2 from './components/signIn/signIn2';
-import SigninPopover from './popovers/signinPopover';
+import Drawer1 from './common/sidemenu/drawer1'
+import Echo from './common/subsidemenu/echo'
+import Firelite from './common/subsidemenu/firelite'
+import Kindle from './common/subsidemenu/kindle'
 import { useRoutes } from 'react-router-dom';
 function App() {
 
   const routes = useRoutes([
     {
-      path:"/" ,element:<Dashboard/>
-    },
+      path:"/" ,element:<Drawer1/> },
     {
-      path:'signIn2',element:<SignIn2/>
-    },
+      path:"/echo", element:<Echo/> },
     {
-      path:'signup',element:<Signup/>
+      path:"/firelite", element:<Firelite/> },
+    {
+      path:"/kindle", element:<Kindle/>
     }
   ])
 

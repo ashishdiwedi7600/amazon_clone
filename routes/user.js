@@ -31,7 +31,7 @@ function postRequest(){
     router.post('/login', userLogin(), validateErrors, userController.userLogin) // Generate Token
     router.post('/addtocart',  varifyUser , validateErrors) // 2 layer security
     router.patch('/verification',userController.verification) 
-    router.post('/dbdump',dbController.dbdump) 
+    // router.post('/dbdump',dbController.dbdump) 
     
 }
 

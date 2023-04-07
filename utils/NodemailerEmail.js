@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const newsletter =require('./newsletter2')
+// const newsletter =require('./newsletter2')
 const sgTransport = require('nodemailer-sendgrid-transport');
 var options = {
     auth: {
@@ -19,7 +19,7 @@ const sendMailTo = async (emailsArr, code) => {
         from: 'abhardwaj1@kloudrac.com', //registered Email on sendgrid
         subject: 'Hi there',
         text: 'Awesome sauce',
-        html: newsletter
+        // html: newsletter
         // html: emailTemplate(code)
     };
 

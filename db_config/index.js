@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
+require('dotenv').config()
+
 
 module.exports = {
     db_connect:(function () {
-        mongoose.connect("mongodb+srv://diwediashish:1234@cluster0.rmrzj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        mongoose.connect(process.env.DB)
             .then(() => console.log("database connected successfully"))
             .catch((e) => console.log(e))
     })

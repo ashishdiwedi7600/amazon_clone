@@ -2,3 +2,4 @@
 /.vscode
 ngrok.exe
 package-lock.json
+.env
